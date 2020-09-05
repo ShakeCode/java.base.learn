@@ -31,4 +31,9 @@ public class FootBall implements Ball {
 
         footBall.run();
     }
+
+    @Override
+    public void createBall() {
+
+    }
 }
