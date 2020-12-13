@@ -28,11 +28,31 @@ public class StatisticTT {
     作用:用来给静态成员变量初始化
     **/
 
-
+    // 静态成员变量属于类对象，可由类对象和类实例对象访问
     static int i;
 
+    // 静态代码块可以有多个, 类加载时自上而下执行
+    static {
+        i = 1;
+    }
+
     public static void main(String[] args) {
-        System.out.println(i); // 0
-        System.out.println(StatisticTT.i); // 0
+        System.out.println(i); // 3
+        System.out.println(StatisticTT.i); // 3
+
+        System.out.println(getName());
+    }
+
+    static String getName() {
+        // this.clone(); 报错
+        return "lijun";
+    }
+
+    static {
+        i = 2;
+    }
+
+    static {
+        i = 3;
     }
 }

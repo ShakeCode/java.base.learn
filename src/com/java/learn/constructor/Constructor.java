@@ -78,7 +78,7 @@ public class Constructor {
         public void say() {
             System.out.println("i am B...");
 
-            // B aa = new B("",12,12.66);
+            // B FootBallA = new B("",12,12.66);
         }
     }
 

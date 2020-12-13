@@ -79,6 +79,6 @@ public class DefaultValue {
         int aa;
         char c;
         boolean bb;
-        // System.out.println(aa); System.out.println(c); System.out.println(bb); // 报错 尚未初始化
+        // System.out.println(FootBallA); System.out.println(c); System.out.println(bb); // 报错 尚未初始化
     }
 }
